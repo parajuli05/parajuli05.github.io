@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Prabhas Parajuli</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-wrapper">
+        <div><b>Prabhas Parajuli</b></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="casestudies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="section" style="padding: 140px 0 100px;">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 80px;">
+            <h2 style="font-size: 3.2rem; font-weight: 700; margin-bottom: 16px;">Get In Touch</h2>
+            <div style="width: 100px; height: 4px; background: #10b981; border-radius: 2px; margin: 0 auto;"></div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 80px; align-items: center; justify-content: center; max-width: 1100px; margin: 0 auto;">
+
+            <!-- Left side - text -->
+            <div style="flex: 1; min-width: 320px; max-width: 480px;">
+                <p style="font-size: 1.25rem; color: #475569; line-height: 1.8; margin-bottom: 40px;">
+                    I'm always open to discussing new projects,<br>
+                    creative ideas, or opportunities to be part of your vision.
+                </p>
+
+                <a 
+                    href="https://www.linkedin.com/in/prabhas07/" 
+                    target="_blank" 
+                    style="display: inline-flex; align-items: center; gap: 12px; color: #0ea5e9; font-weight: 600; text-decoration: none; font-size: 1.15rem;"
+                >
+                    <span style="font-size: 1.8rem; font-weight: bold;">in</span>
+                    LinkedIn
+                </a>
+            </div>
+
+            <!-- Right side - contact form card -->
+            <div style="flex: 1; min-width: 380px; background: white; padding: 40px 36px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.08);">
+                <form id="contact-form" onsubmit="sendToWhatsApp(event)">
+                    <div style="margin-bottom: 28px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500; color: #334155; font-size: 1rem;">Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            placeholder="Your name" 
+                            required 
+                            style="width: 100%; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 1rem; outline: none; transition: border 0.2s;"
+                            onfocus="this.style.borderColor='#10b981'"
+                        >
+                    </div>
+
+                    <div style="margin-bottom: 28px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500; color: #334155; font-size: 1rem;">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="your.email@example.com" 
+                            required 
+                            style="width: 100%; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 1rem; outline: none; transition: border 0.2s;"
+                            onfocus="this.style.borderColor='#10b981'"
+                        >
+                    </div>
+
+                    <div style="margin-bottom: 36px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500; color: #334155; font-size: 1rem;">Message</label>
+                        <textarea 
+                            id="message" 
+                            placeholder="Tell me about your project or idea..." 
+                            required 
+                            rows="5"
+                            style="width: 100%; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 1rem; resize: vertical; outline: none; transition: border 0.2s;"
+                            onfocus="this.style.borderColor='#10b981'"
+                        ></textarea>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        style="width: 100%; padding: 16px; background: #10b981; color: white; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s;"
+                    >
+                        Send Message via WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    © 2026 Prabhas Parajuli • Kathmandu, Nepal
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+        alert("Please fill in all fields");
+        return;
+    }
+
+    
+    const whatsappNumber = "9745619170";  
+
+    const text = 
+        `*New message from portfolio*%0A%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Email:* ${encodeURIComponent(email)}%0A%0A` +
+        `*Message:*%0A${encodeURIComponent(message)}`;
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+    window.open(whatsappUrl, '_blank');
+    
+    // Clear form after sending
+    document.getElementById('contact-form').reset();
+}
+</script>
+
+</body>
+</html>
