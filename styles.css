@@ -166,7 +166,87 @@ body {
 .timeline-line-desktop {
     display: block !important; /* only on desktop if you add media query */
 }
+    /* Base Navbar Styles (Desktop) */
+.navbar {
+    background: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #10b981;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #334155;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Responsive Styles (Android/iOS) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide standard menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Class to trigger when the menu is open */
+    .nav-links.active {
+        display: flex;
+    }
+}
 @media (max-width: 768px) {
     .timeline-line-desktop { display: none; }
 }
+
 }
