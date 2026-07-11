@@ -3,388 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prabhas Parajuli - UI/UX Designer & Frontend Developer based in Kathmandu, Nepal">
-    <title>Prabhas Parajuli | UI/UX & Frontend Developer</title>
-    
+    <meta name="description" content="Prabhas Parajuli - Aspiring Data Scientist based in Kathmandu, Nepal. Python, machine learning, data analysis & visualization.">
+    <title>Prabhas Parajuli | Aspiring Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- ============================ NAVBAR ============================ -->
 <nav class="navbar">
     <div class="container nav-wrapper">
-        <div class="logo"><b>Prabhas Parajuli</b></div>
-        
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
+        <a href="index.html" class="logo" style="text-decoration:none"><b>Prabhas Parajuli</b><span class="dot">.</span></a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
         <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="experience.html">Experience</a></li>
-            <li><a href="process.html">Process</a></li>
-            <li><a href="casestudies.html">Case Studies</a></li>
+            <li><a href="process.html">Workflow</a></li>
+            <li><a href="casestudies.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<section class="hero">
+<!-- ============================ HERO ============================ -->
+<header class="hero">
     <div class="container hero-content">
-        <div class="hero-text">
-            <h1>UI/UX Designer &amp; Frontend Developer</h1>
-            <p>I create beautiful, intuitive digital products that users love and businesses grow from.</p>
-            <div>
-                <a href="casestudies.html" class="btn btn-primary" style="background: #10b981; color: white; padding: 16px 48px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1.15rem; display: inline-block; transition: all 0.3s;">View Case Studies</a>
-                <a href="contact.html" class="btn" style="background:#f1f1f1;color:#111;margin-left:15px;">Get in Touch</a>
-                <div style="display: flex; gap: 32px; align-items: center; flex-wrap: wrap;">
-    <a 
-        href="https://www.linkedin.com/in/prabhas07/" 
-        target="_blank" 
-        style="display: inline-flex; align-items: center; gap: 12px; color: #0ea5e9; font-weight: 600; text-decoration: none; font-size: 1.15rem;"
-    >
-        <span style="font-size: 1.8rem; font-weight: bold;">in</span>
-        LinkedIn
-    </a>
-
-    <a 
-        href="https://github.com/parajuli05" 
-        target="_blank" 
-        style="display: inline-flex; align-items: center; gap: 12px; color: #334155; font-weight: 600; text-decoration: none; font-size: 1.15rem; transition: color 0.3s;"
-    >
-        <span style="font-size: 1.8rem; font-weight: bold;">&lt;/&gt;</span>
-        GitHub
-    </a>
-</div>
-            </div>
-        </div>
-        <div>
-            <img src="prabhas-profile.jpg.jpeg" alt="Prabhas Parajuli" style="width:100%; border-radius:24px; box-shadow:0 30px 80px rgba(0,0,0,0.15);">
-        </div>
-    </div>
-</section>
-
-<!-- Modern About Me Section -->
-<section class="section" id="about" style="padding: 140px 0; background: linear-gradient(to bottom, #ffffff, #f8fafc);">
-    <div class="container">
-        <div class="about-container" style="max-width: 1100px; margin: 0 auto;">
-
-            <!-- Intro heading with subtle underline -->
-            <div style="text-align: center; margin-bottom: 80px;">
-                <h2 style="font-size: 3.4rem; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.5px;">About Me</h2>
-                <div style="width: 100px; height: 4px; background: #10b981; border-radius: 2px; margin: 0 auto;"></div>
-            </div>
-
-            <!-- Flex layout: text left, photo right (stacks on mobile) -->
-            <div style="display: flex; flex-wrap: wrap; gap: 80px; align-items: center; justify-content: space-between;">
-
-                <!-- Text + skills column -->
-                <div style="flex: 1; min-width: 340px;">
-                    <div style="font-size: 1.25rem; color: #334155; line-height: 1.85; margin-bottom: 60px;">
-                        <p style="margin-bottom: 28px;">
-                            I'm a passionate <strong style="color: #0f766e;">UI/UX Designer</strong> and <strong style="color: #0f766e;">Frontend Developer</strong> with a keen eye for creating beautiful, functional digital experiences.
-                        </p>
-                        <p>
-                            My approach combines user-centered design principles with modern web technologies to deliver solutions that not only look great but also solve real problems. With expertise spanning from initial research and wireframing to final implementation, I bridge the gap between design and development, ensuring seamless execution of digital products.
-                        </p>
-                    </div>
-
-                    <!-- Skills grid – cleaner columns -->
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 50px;">
-                        
-                        <div>
-                            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; position: relative; display: inline-block; color: #111;">
-                                Design Skills
-                                <span style="position: absolute; bottom: -8px; left: 0; width: 70%; height: 3px; background: #10b981; border-radius: 2px;"></span>
-                            </h3>
-                            <ul style="list-style: none; padding: 0; font-size: 1.08rem; color: #475569; line-height: 2.1;">
-                                <li>● UI Design</li>
-                                <li>● UX Research</li>
-                                <li>● Wireframing</li>
-                                <li>● Prototyping</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; position: relative; display: inline-block; color: #111;">
-                                Development Skills
-                                <span style="position: absolute; bottom: -8px; left: 0; width: 70%; height: 3px; background: #10b981; border-radius: 2px;"></span>
-                            </h3>
-                            <ul style="list-style: none; padding: 0; font-size: 1.08rem; color: #475569; line-height: 2.1;">
-                                <li>● HTML</li>
-                                <li>● CSS</li>
-                                <li>● JavaScript</li>
-                               
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; position: relative; display: inline-block; color: #111;">
-                                Tools
-                                <span style="position: absolute; bottom: -8px; left: 0; width: 70%; height: 3px; background: #10b981; border-radius: 2px;"></span>
-                            </h3>
-                            <ul style="list-style: none; padding: 0; font-size: 1.08rem; color: #475569; line-height: 2.1;">
-                                <li>● Figma</li>
-                                <li>● Adobe XD</li>
-                                <li>● VS Code</li>
-                                <li>● Git</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Profile photo – modern card-like with subtle lift -->
-                <div style="flex: 0 0 360px; text-align: center;">
-                    <div style="position: relative; padding: 12px; background: white; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.08); transition: all 0.4s ease;">
-                        <img 
-                            src="about me.jpeg" 
-                            alt="Prabhas Parajuli - UI/UX Designer & Frontend Developer" 
-                            style="width: 100%; border-radius: 24px; display: block; object-fit: cover; aspect-ratio: 3/4;"
-                        >
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- Featured Projects Section -->
-<section class="section" style="padding: 140px 0 80px;">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 80px;">
-            <h2 style="font-size: 3.2rem; font-weight: 700; margin-bottom: 16px;">Case Studies</h2>
-            <div style="width: 100px; height: 4px; background: #10b981; border-radius: 2px; margin: 0 auto;"></div>
-            <p style="font-size: 1.25rem; color: #475569; margin-top: 32px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                Detailed breakdowns of selected projects from research and design to implementation and measurable results.
+        <div class="hero-text reveal">
+            <span class="hero-badge"><span class="pulse"></span>Available for internships &amp; junior roles</span>
+            <h1>Turning raw data into <span class="grad-text">clear decisions</span></h1>
+            <div class="hero-role" id="hero-role"
+                 data-roles='["Aspiring Data Scientist","Python Developer","Machine Learning Enthusiast","Data Storyteller"]'></div>
+            <p class="lead">
+                I'm Prabhas currently training in <strong style="color:var(--text)">Data Science with Python</strong> at
+                Broadway Infosys. I clean messy datasets, explore patterns, build models, and communicate insights
+                that people can act on.
             </p>
-        </div>
-
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 40px;">
-
-            <!-- Case Study 1:  -->
-          <div class="card" style="overflow: hidden; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); transition: all 0.4s ease;">
-    
-    <!-- Clickable Image -->
-    <a href="https://your-website-link.com" target="_blank">
-        <img src="1 (2).png" 
-             alt="Marketing Agency Website"
-             style="width: 100%; height: 240px; object-fit: cover;">
-    </a>
-
-    <div style="padding: 32px;">
-        <h3 style="font-size: 1.6rem; margin-bottom: 16px;">Marketing Agency Website</h3>
-        <p style="color: #64748b; margin-bottom: 24px; line-height: 1.7;">
-            Designed and developed a website for a marketing agency that focused on improving user experience and increasing client inquiries.
-        </p>
-
-        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px;">
-            <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">CSS</span>
-            <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">HTML</span>
-            <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">PHP</span>
-            <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">JS</span>
-        </div>
-
-        <a href="casestudies.html" style="color: #10b981; font-weight: 600; text-decoration: none;">
-            View Full Case Study ↓
-        </a>
-        <div style="display: flex; gap: 32px; align-items: center; flex-wrap: wrap;">
-   
-
-    <a 
-        href="https://github.com/parajuli05" 
-        target="_blank" 
-        style="display: inline-flex; align-items: center; gap: 12px; color: #334155; font-weight: 600; text-decoration: none; font-size: 1.15rem; transition: color 0.3s;"
-    >
-        <span style="font-size: 1.8rem; font-weight: bold;">&lt;/&gt;</span>
-        GitHub
-    </a>
-</div>
-    </div>
-</div>
-
-            <!-- Case Study 2: -->
-            <div class="card" style="overflow: hidden; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); transition: all 0.4s ease;">
-                 <a href="https://your-website-link.com" target="_blank">
-        <img src="1 (1).png" 
-             alt="Marketing Agency Website"
-             style="width: 100%; height: 240px; object-fit: cover;">
-    </a>
-                <div style="padding: 32px;">
-                    <h3 style="font-size: 1.6rem; margin-bottom: 16px;">STORE MANAGEMENT SYSTEM</h3>
-                    <p style="color: #64748b; margin-bottom: 24px; line-height: 1.7;">
-                     Helps manage inventory, orders, and track store performance easily.
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px;">
-                        <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">HTML</span>
-                        <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">CSS</span>
-                        <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">PHP</span>
-                           <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">JS</span>
-                    </div>
-                    <a href="casestudies.html" style="color: #10b981; font-weight: 600; text-decoration: none;">View Full Case Study ↓</a>
-                    <div style="display: flex; gap: 32px; align-items: center; flex-wrap: wrap;">
-  
-
-    <a 
-        href="https://github.com/parajuli05" 
-        target="_blank" 
-        style="display: inline-flex; align-items: center; gap: 12px; color: #334155; font-weight: 600; text-decoration: none; font-size: 1.15rem; transition: color 0.3s;"
-    >
-        <span style="font-size: 1.8rem; font-weight: bold;">&lt;/&gt;</span>
-        GitHub
-    </a>
-</div>
-                </div>
+            <div class="hero-actions">
+                <a href="casestudies.html" class="btn btn-primary">View Projects</a>
+                <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
             </div>
-
-            <!-- Case Study 3: Portfolio Website (self-referential) -->
-            <div class="card" style="overflow: hidden; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); transition: all 0.4s ease;">
-                  <a href="https://your-website-link.com" target="_blank">
-        <img src="1 (3).png" 
-             alt="Marketing Agency Website"
-             style="width: 100%; height: 240px; object-fit: cover;">
-    </a>
-                <div style="padding: 32px;">
-                    <h3 style="font-size: 1.6rem; margin-bottom: 16px;">Personal Portfolio Website</h3>
-                    <p style="color: #64748b; margin-bottom: 24px; line-height: 1.7;">
-                        Responsive personal site built with clean code, smooth interactions, and strong personal branding.
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px;">
-                        <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">HTML</span>
-                        <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">CSS</span>
-                        <span style="background: #ecfdf5; color: #10b981; padding: 6px 14px; border-radius: 999px; font-size: 0.9rem;">JavaScript</span>
-                    </div>
-                    <a href="casestudies.html" style="color: #10b981; font-weight: 600; text-decoration: none;">View Full Case Study ↓</a>
-                    <div style="display: flex; gap: 32px; align-items: center; flex-wrap: wrap;">
-  
-
-    <a 
-        href="https://github.com/parajuli05" 
-        target="_blank" 
-        style="display: inline-flex; align-items: center; gap: 12px; color: #334155; font-weight: 600; text-decoration: none; font-size: 1.15rem; transition: color 0.3s;"
-    >
-        <span style="font-size: 1.8rem; font-weight: bold;">&lt;/&gt;</span>
-        GitHub
-    </a>
-</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Get In Touch Section with WhatsApp integration -->
-<section class="section" style="padding: 140px 0; background: #f8fafc;">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 80px;">
-            <h2 style="font-size: 3.2rem; font-weight: 700; margin-bottom: 16px;">Get In Touch</h2>
-            <div style="width: 100px; height: 4px; background: #10b981; border-radius: 2px; margin: 0 auto;"></div>
-        </div>
-
-        <div style="display: flex; flex-wrap: wrap; gap: 80px; align-items: center; justify-content: center; max-width: 1100px; margin: 0 auto;">
-
-            <!-- Left text -->
-            <div style="flex: 1; min-width: 320px; max-width: 500px;">
-                <p style="font-size: 1.25rem; color: #475569; line-height: 1.8; margin-bottom: 40px;">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-                </p>
-                <a 
-                    href="https://www.linkedin.com/in/prabhas07/" 
-                    target="_blank" 
-                    style="display: inline-flex; align-items: center; gap: 12px; color: #0ea5e9; font-weight: 600; text-decoration: none; font-size: 1.1rem;"
-                >
-                    <span style="font-size: 1.6rem;">in</span> LinkedIn
+            <div class="social-row">
+                <a href="https://www.linkedin.com/in/prabhas07/" target="_blank" rel="noopener" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.06 3.77-2.06C20.5 8.64 22 10.7 22 14.1V21h-4v-6.1c0-1.46-.03-3.33-2.03-3.33-2.03 0-2.34 1.58-2.34 3.22V21H9z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/parajuli05" target="_blank" rel="noopener" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+                    GitHub
                 </a>
             </div>
+        </div>
 
-            <!-- Right – WhatsApp contact form simulation -->
-            <div style="flex: 1; min-width: 360px; background: white; padding: 40px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.08);">
-                <form id="whatsapp-form" onsubmit="sendToWhatsApp(event)">
-                    <div style="margin-bottom: 24px;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 500; color: #334155;">Name</label>
-                        <input type="text" id="name" placeholder="Your name" required 
-                               style="width: 100%; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 1rem;">
-                    </div>
-
-                    <div style="margin-bottom: 24px;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 500; color: #334155;">Email</label>
-                        <input type="email" id="email" placeholder="your.email@example.com" required 
-                               style="width: 100%; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 1rem;">
-                    </div>
-
-                    <div style="margin-bottom: 32px;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 500; color: #334155;">Message</label>
-                        <textarea id="message" placeholder="Tell me about your project or idea..." required rows="5"
-                                  style="width: 100%; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 1rem; resize: vertical;"></textarea>
-                    </div>
-
-                    <button type="submit" 
-                            style="width: 100%; padding: 16px; background: #10b981; color: white; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s;">
-                        Send Message via WhatsApp
-                    </button>
-                </form>
+        <div class="hero-visual reveal d1">
+            <div class="profile-frame">
+                <div class="ring"></div>
+                <img src="prabhas-profile.jpg.jpeg" alt="Prabhas Parajuli">
+                <div class="data-chip c1">import pandas as pd</div>
+                <div class="data-chip c2">model.fit(X, y)</div>
+                <div class="data-chip c3">accuracy: 0.94</div>
             </div>
+        </div>
+    </div>
+</header>
 
+<!-- ============================ SKILLS MARQUEE ============================ -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+        <span class="marquee-item"><span class="dot">◆</span>Python</span>
+        <span class="marquee-item"><span class="dot">◆</span>Pandas</span>
+        <span class="marquee-item"><span class="dot">◆</span>NumPy</span>
+        <span class="marquee-item"><span class="dot">◆</span>Matplotlib</span>
+        <span class="marquee-item"><span class="dot">◆</span>Seaborn</span>
+        <span class="marquee-item"><span class="dot">◆</span>Scikit-learn</span>
+        <span class="marquee-item"><span class="dot">◆</span>SQL</span>
+        <span class="marquee-item"><span class="dot">◆</span>Jupyter</span>
+        <span class="marquee-item"><span class="dot">◆</span>Statistics</span>
+        <span class="marquee-item"><span class="dot">◆</span>Machine Learning</span>
+        <!-- duplicate set for seamless loop -->
+        <span class="marquee-item"><span class="dot">◆</span>Python</span>
+        <span class="marquee-item"><span class="dot">◆</span>Pandas</span>
+        <span class="marquee-item"><span class="dot">◆</span>NumPy</span>
+        <span class="marquee-item"><span class="dot">◆</span>Matplotlib</span>
+        <span class="marquee-item"><span class="dot">◆</span>Seaborn</span>
+        <span class="marquee-item"><span class="dot">◆</span>Scikit-learn</span>
+        <span class="marquee-item"><span class="dot">◆</span>SQL</span>
+        <span class="marquee-item"><span class="dot">◆</span>Jupyter</span>
+        <span class="marquee-item"><span class="dot">◆</span>Statistics</span>
+        <span class="marquee-item"><span class="dot">◆</span>Machine Learning</span>
+    </div>
+</div>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// about_me</span>
+            <h2 class="section-heading">Who I am</h2>
+            <div class="heading-rule"></div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; align-items:center; max-width:1100px; margin:0 auto;" class="about-grid">
+            <div class="reveal">
+                <div class="card" style="padding:14px; border-radius:var(--radius-lg);">
+                    <img src="about me.jpeg" alt="Prabhas Parajuli" style="width:100%; border-radius:var(--radius); display:block; aspect-ratio:4/5; object-fit:cover;">
+                </div>
+            </div>
+            <div class="reveal d1">
+                <p style="font-size:1.15rem; color:var(--muted); margin-bottom:20px;">
+                    I'm a <strong style="color:var(--text)">data-driven problem solver</strong> making the shift from
+                    building interfaces to building insight. My curiosity for how things work now points at datasets:
+                    finding the signal in the noise, testing assumptions, and letting the numbers tell the story.
+                </p>
+                <p style="font-size:1.15rem; color:var(--muted); margin-bottom:34px;">
+                    Through my <strong style="color:var(--text)">Data Science with Python</strong> training at
+                    <a href="https://broadwayinfosys.com/python/data-science-with-python-training-in-nepal" target="_blank" rel="noopener" style="color:var(--cyan); text-decoration:none;">Broadway Infosys</a>,
+                    I work hands-on with real data from cleaning and exploratory analysis to machine-learning models
+                    and clear visual reporting.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat"><div class="num grad-text" data-count="10" data-suffix="+">0</div><div class="label">Practice projects</div></div>
+                    <div class="stat"><div class="num grad-text" data-count="6" data-suffix="+">0</div><div class="label">Core Python libraries</div></div>
+                    <div class="stat"><div class="num grad-text" data-count="100" data-suffix="%">0</div><div class="label">Curiosity</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill bars -->
+        <div style="max-width:1100px; margin:80px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:50px;" class="about-grid">
+            <div class="reveal">
+                <h3 style="font-size:1.3rem; margin-bottom:26px;">Technical proficiency</h3>
+                <div class="skill-block">
+                    <div class="skill-top"><span>Python</span><span class="pct">85%</span></div>
+                    <div class="skill-bar"><span data-level="85"></span></div>
+                </div>
+                <div class="skill-block">
+                    <div class="skill-top"><span>Pandas / NumPy</span><span class="pct">80%</span></div>
+                    <div class="skill-bar"><span data-level="80"></span></div>
+                </div>
+                <div class="skill-block">
+                    <div class="skill-top"><span>Data Visualization</span><span class="pct">78%</span></div>
+                    <div class="skill-bar"><span data-level="78"></span></div>
+                </div>
+                <div class="skill-block">
+                    <div class="skill-top"><span>Machine Learning</span><span class="pct">70%</span></div>
+                    <div class="skill-bar"><span data-level="70"></span></div>
+                </div>
+                <div class="skill-block">
+                    <div class="skill-top"><span>SQL</span><span class="pct">72%</span></div>
+                    <div class="skill-bar"><span data-level="72"></span></div>
+                </div>
+            </div>
+            <div class="reveal d1">
+                <h3 style="font-size:1.3rem; margin-bottom:26px;">Tools &amp; ecosystem</h3>
+                <div class="chip-group">
+                    <span class="chip">Jupyter Notebook</span>
+                    <span class="chip">Google Colab</span>
+                    <span class="chip">Anaconda</span>
+                    <span class="chip">VS Code</span>
+                    <span class="chip">Git &amp; GitHub</span>
+                    <span class="chip">Scikit-learn</span>
+                    <span class="chip">Matplotlib</span>
+                    <span class="chip">Seaborn</span>
+                    <span class="chip">Excel</span>
+                    <span class="chip">MySQL</span>
+                </div>
+                <h3 style="font-size:1.3rem; margin:36px 0 20px;">What I enjoy most</h3>
+                <ul style="list-style:none; padding:0; color:var(--muted);">
+                    <li style="margin-bottom:10px;">▹ Digging into messy data and cleaning it up</li>
+                    <li style="margin-bottom:10px;">▹ Spotting patterns through exploratory analysis</li>
+                    <li style="margin-bottom:10px;">▹ Explaining results with clear charts</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
-<script>
-function sendToWhatsApp(event) {
-    event.preventDefault();
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
+<!-- ============================ WHAT I DO ============================ -->
+<section class="section alt">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// what_i_do</span>
+            <h2 class="section-heading">Services</h2>
+            <p class="section-sub">Where creativity, code, and statistics come together to turn data into something useful.</p>
+        </div>
 
-    if (!name || !email || !message) {
-        alert("Please fill in all fields");
-        return;
-    }
+        <div class="grid grid-3">
+            <div class="card service-card reveal">
+                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></div>
+                <h3>Data Analysis &amp; EDA</h3>
+                <p>Cleaning, transforming, and exploring datasets with Pandas and NumPy to surface trends before any modeling begins.</p>
+                <a href="process.html" class="more">Learn more →</a>
+            </div>
+            <div class="card service-card reveal d1">
+                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+                <h3>Machine Learning</h3>
+                <p>Building and evaluating regression and classification models with Scikit-learn, from train/test splits to metrics.</p>
+                <a href="process.html" class="more">Learn more →</a>
+            </div>
+            <div class="card service-card reveal d2">
+                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></div>
+                <h3>Data Visualization</h3>
+                <p>Designing clear, honest charts and dashboards with Matplotlib and Seaborn so insights are easy to act on.</p>
+                <a href="process.html" class="more">Learn more →</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    const whatsappNumber = "9745619170"; 
+<!-- ============================ FEATURED PROJECTS ============================ -->
+<section class="section">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// featured_projects</span>
+            <h2 class="section-heading">Recent work</h2>
+            <p class="section-sub">A selection of data projects from exploratory analysis to predictive models.</p>
+        </div>
 
-    const text = 
-        `*New message from portfolio*%0A%0A` +
-        `*Name:* ${name}%0A` +
-        `*Email:* ${email}%0A%0A` +
-        `*Message:*%0A${encodeURIComponent(message)}`;
+        <div class="grid grid-3">
+            <div class="card project-card reveal">
+                <div class="thumb"><img src="1 (2).png" alt="Sales data analysis"></div>
+                <div class="body">
+                    <h3>Sales Data Analysis</h3>
+                    <p>Cleaned and analyzed a retail sales dataset to uncover seasonal trends and top-performing categories.</p>
+                    <div class="tag-row">
+                        <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+                    </div>
+                    <a href="casestudies.html" class="card-link">View project →</a>
+                </div>
+            </div>
+            <div class="card project-card reveal d1">
+                <div class="thumb"><img src="1 (1).png" alt="Customer churn prediction"></div>
+                <div class="body">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>Trained a classification model to predict which customers are likely to leave, using Scikit-learn.</p>
+                    <div class="tag-row">
+                        <span class="tag">Scikit-learn</span><span class="tag">NumPy</span><span class="tag">ML</span>
+                    </div>
+                    <a href="casestudies.html" class="card-link">View project →</a>
+                </div>
+            </div>
+            <div class="card project-card reveal d2">
+                <div class="thumb"><img src="1 (3).png" alt="EDA dashboard"></div>
+                <div class="body">
+                    <h3>Exploratory Data Dashboard</h3>
+                    <p>Built an interactive-style notebook dashboard summarizing key metrics with Seaborn visualizations.</p>
+                    <div class="tag-row">
+                        <span class="tag">Seaborn</span><span class="tag">Jupyter</span><span class="tag">EDA</span>
+                    </div>
+                    <a href="casestudies.html" class="card-link">View project →</a>
+                </div>
+            </div>
+        </div>
 
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+        <div style="text-align:center; margin-top:50px;" class="reveal">
+            <a href="casestudies.html" class="btn btn-ghost">See all projects</a>
+        </div>
+    </div>
+</section>
 
-    window.open(whatsappUrl, '_blank');
-    
-    // Optional: clear form after send
-    document.getElementById('whatsapp-form').reset();
-}
+<!-- ============================ TOOLS MARQUEE ============================ -->
+<section class="section alt" style="padding-bottom:70px;">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">// tools_i_use</span>
+            <h2 class="section-heading">The stack behind the analysis</h2>
+        </div>
+    </div>
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" style="animation-duration:28s;">
+            <span class="marquee-item"><span class="dot">▹</span>Jupyter Notebook</span>
+            <span class="marquee-item"><span class="dot">▹</span>Google Colab</span>
+            <span class="marquee-item"><span class="dot">▹</span>Anaconda</span>
+            <span class="marquee-item"><span class="dot">▹</span>VS Code</span>
+            <span class="marquee-item"><span class="dot">▹</span>Git &amp; GitHub</span>
+            <span class="marquee-item"><span class="dot">▹</span>MySQL</span>
+            <span class="marquee-item"><span class="dot">▹</span>Excel</span>
+            <span class="marquee-item"><span class="dot">▹</span>Scikit-learn</span>
+            <span class="marquee-item"><span class="dot">▹</span>Jupyter Notebook</span>
+            <span class="marquee-item"><span class="dot">▹</span>Google Colab</span>
+            <span class="marquee-item"><span class="dot">▹</span>Anaconda</span>
+            <span class="marquee-item"><span class="dot">▹</span>VS Code</span>
+            <span class="marquee-item"><span class="dot">▹</span>Git &amp; GitHub</span>
+            <span class="marquee-item"><span class="dot">▹</span>MySQL</span>
+            <span class="marquee-item"><span class="dot">▹</span>Excel</span>
+            <span class="marquee-item"><span class="dot">▹</span>Scikit-learn</span>
+        </div>
+    </div>
+</section>
 
-    // Mobile Menu Toggle
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+<!-- ============================ CTA ============================ -->
+<section class="section">
+    <div class="container">
+        <div class="cta-banner reveal">
+            <h2>Let's build something with <span class="grad-text">your data</span></h2>
+            <p>Open to internships, junior data roles, and collaborative projects.</p>
+            <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+        </div>
+    </div>
+</section>
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-</script>
-
-
+<!-- ============================ FOOTER ============================ -->
 <footer class="footer">
-    © 2026 Prabhas Parajuli • Kathmandu, Nepal
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="brand-name">Prabhas Parajuli<span class="dot" style="color:var(--cyan)">.</span></div>
+                <p>Aspiring data scientist based in Kathmandu, Nepal turning raw data into clear, honest decisions.</p>
+            </div>
+            <div>
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="process.html">Workflow</a></li>
+                    <li><a href="casestudies.html">Projects</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Focus</h4>
+                <ul>
+                    <li><a href="process.html">Data Analysis</a></li>
+                    <li><a href="process.html">Machine Learning</a></li>
+                    <li><a href="process.html">Visualization</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/prabhas07/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.06 3.77-2.06C20.5 8.64 22 10.7 22 14.1V21h-4v-6.1c0-1.46-.03-3.33-2.03-3.33-2.03 0-2.34 1.58-2.34 3.22V21H9z"/></svg>
+                    </a>
+                    <a href="https://github.com/parajuli05" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+                    </a>
+                    <a href="https://wa.me/9745619170" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5s0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3a2.9 2.9 0 0 0-.9 2.1c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
+                    </a>
+                </div>
+                <p style="margin-top:16px; font-size:0.9rem;">Kathmandu, Nepal<br>+977 974-5619170</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Prabhas Parajuli • BIM STUDENT(ST.XAVIER'S COLLEGE, MAITGHAR)</div>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
